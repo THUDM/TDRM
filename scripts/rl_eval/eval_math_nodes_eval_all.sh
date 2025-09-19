@@ -19,7 +19,7 @@ export NCCL_DEBUG=warn
 set -x
 
 export WANDB_OFFICIAL=1
-export WANDB_API_KEY=2de3defdedb87a44ee32a7e5d02a764d56e9d765
+export WANDB_API_KEY=""
 TOTAL_NODES=${ARNOLD_WORKER_NUM:-1}  # Default to 1 if not set
 CURRENT_NODE=${ARNOLD_ID:-0}  # Default to 0 if not set
 
