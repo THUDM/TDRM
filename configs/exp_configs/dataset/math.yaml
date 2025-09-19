@@ -1,0 +1,66 @@
+dataset_name: "lighteval/MATH"
+ds_config: null
+split: "train"
+prompt_key: "problem"
+answer_key: null
+solution_key: solution
+dataset_output: "math"
+
+start_from: 0
+num_samples: 1000000
+
+source_data_path: /path/to/TDRM/steer-align/outputs/math/bon_naive/llama3-8b-inst_temp0.7_minp0.05_run0.json
+
+answer_parse_func: |
+    def parse_answer(solution: str) -> str:
+        """
+        Parse the final answer from a given solution text.
+        Extracts the content inside the last \\boxed{} and normalizes it.
+        
+        Args:
+            solution (str): The solution text containing the answer.
+
+        Returns:
+            str: The normalized final answer, or "[invalidanswer]" if not found.
+        """
+        # Extract the last \boxed{} content
+        def last_boxed(string):
+            idx = string.rfind("\\boxed")
+            if idx < 0:
+                return None
+            i = idx
+            num_left_braces_open = 0
+            while i < len(string):
+                if string[i] == "{":
+                    num_left_braces_open += 1
+                elif string[i] == "}":
+                    num_left_braces_open -= 1
+                    if num_left_braces_open == 0:
+                        return string[idx:i + 1]
+                i += 1
+            return None
+
+        # Remove the \boxed{} wrapper
+        def remove_boxed(s):
+            try:
+                if s.startswith("\\boxed{") and s.endswith("}"):
+                    return s[7:-1]
+            except AssertionError:
+                pass
+            return None
+
+        # Normalize the answer
+        def normalize_answer(answer):
+            SUBSTITUTIONS = [("an ", ""), ("a ", ""), ("\\$", ""), (",\\text{and}", ","), ("\\text{and}", ",")]
+            REMOVED_EXPRESSIONS = ["square", "ways", "units", "\\text{}"]
+
+            for before, after in SUBSTITUTIONS:
+                answer = answer.replace(before, after)
+            for expr in REMOVED_EXPRESSIONS:
+                answer = answer.replace(expr, "")
+            return answer.strip()
+
+        # Parse and normalize the final answer
+        boxed_content = last_boxed(solution)
+        unboxed_answer = remove_boxed(boxed_content)
+        return normalize_answer(unboxed_answer)

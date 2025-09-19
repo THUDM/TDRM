@@ -1,0 +1,7 @@
+n: 8
+epoch: 1
+temperature: 1.0
+min_p: 0.05
+do_sample: true
+max_new_tokens: 2048
+batch_size: 1

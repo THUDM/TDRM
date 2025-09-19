@@ -1,0 +1,13 @@
+dataset_name: "openai/gsm8k"
+ds_config: "main"
+split: "train"
+prompt_key: "question"
+answer_key: null
+solution_key: answer
+dataset_output: "gsm8k"
+
+start_from: 0
+num_samples: 1000000
+
+answer_parse_func: 'lambda x: x.split("#### ")[-1]'
+source_data_path: /path/to/TDRM/steer-align/outputs/gsm8k/bon_naive/llama3-8b-inst_temp0.7_minp0.05_run0.json

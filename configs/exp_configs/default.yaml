@@ -1,0 +1,6 @@
+defaults:
+  - gens: default
+  - model: llama3-8b-inst
+  - dataset: gsm8k
+  - method: beam-search
+  - base

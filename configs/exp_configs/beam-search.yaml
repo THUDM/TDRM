@@ -1,0 +1,7 @@
+defaults:
+  - gens: default
+  - model: llama31-8b-inst
+  - dataset: gsm8k
+  - method: greedy-search
+  - prefix: cot
+  - base

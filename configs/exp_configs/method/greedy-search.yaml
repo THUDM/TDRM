@@ -1,0 +1,17 @@
+top_k: 1
+num_branch: 2
+depth: 30
+step_max_tokens: 64
+max_length: 4096
+stop: null
+stop_name: "null"
+
+output_path: "greedy_search"
+info_path: "greedy_search/tree_info/"
+
+value_model_path: "/path/to/TDRM-checkpoints/ds_scalar_td_prm_1413k_clamp_cosine_shaped/last_checkpoint"
+
+# advanced strategy
+initial_branch: null
+initial_depth: null
+branch_decay: null

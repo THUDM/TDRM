@@ -1,0 +1,1 @@
+For GLM series model, we use [slime](https://github.com/THUDM/slime) for training. You can use the scripts under `glm-z1-9b-0414-scripts` and `glm4-9b-0414-scripts` to launch the experiments.

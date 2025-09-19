@@ -1,0 +1,8 @@
+defaults:
+  - gens: default
+  - model: qwen-math-7b
+  - dataset: simpleRL
+  - method: n-rollout
+  - prefix: none
+  - base
+debug: False

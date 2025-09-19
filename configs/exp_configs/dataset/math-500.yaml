@@ -1,0 +1,9 @@
+dataset_name: "HuggingFaceH4/MATH-500"
+ds_config: null
+split: "test"
+prompt_key: "problem"
+
+dataset_output: "math-500"
+
+start_from: 0
+num_samples: 1000000
