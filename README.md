@@ -88,7 +88,7 @@ All the tasks can be launched using scripts from `scripts`. Here is a table of c
 |---------------|---------|
 | Training TDRM | `accelerate launch -m tdrm.tdrm_1_step_train --deepspeed ./configs/zero3.json` |
 | RL Training | `CUDA_VISIBLE_DEVICES=0,1 bash qwen-2.5-0.5b-scripts/qwen25_grpo_process_rule_level3.sh`|
-| Best-of-N Verification | `torchrun --nproc_per_node=4 --nnodes=1 --node_rank=0 --master_addr="localhost" --master_port=12345 prm_evaluation/src/rewarding/get_reward_math_td_lambda_prm.py --data_path evaluation/outputs/math-500/mistral_rlhflow_bo128/ --save_path /path/to/scored_data/ --prm_path /path/to/checkpoint/`|
+| Best-of-N Verification | `torchrun --nproc_per_node=4 --nnodes=1 --node_rank=0 --master_addr="localhost" --master_port=12345 prm_evaluation/src/rewarding/get_reward_math_prm_filter.py --data_path evaluation/outputs/math-500/mistral_rlhflow_bo128/ --save_path /path/to/scored_data/ --prm_path /path/to/checkpoint/`|
 | Greedy Search Verification | `python -m scripts.tree_search.beam_search`|
 
 For more details, please refer to the README files in `scripts/`
