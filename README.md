@@ -1,7 +1,7 @@
 # TDRM: Smooth Reward Models with Temporal Difference for LLM RL and Inference
 
 <p align="center">
-📃 <a href="https://arxiv.org/abs/2406.03816" target="_blank">[TDRM]</a> 
+📃 <a href="https://arxiv.org/abs/2509.15110" target="_blank">[TDRM]</a> 
 <a href="https://github.com/THUDM/TDRM" target="_blank">[GitHub]</a>
 <a href="https://llm-tdrm.github.io/" target="_blank">[Website]</a> <br>
 </p>
