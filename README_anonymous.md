@@ -1,9 +1,9 @@
 # TDRM: Smooth Reward Models with Temporal Difference for LLM RL and Inference
 
 <p align="center">
-📃 <a href="https://arxiv.org/abs/2509.15110" target="_blank">[TDRM]</a> 
-<a href="https://github.com/THUDM/TDRM" target="_blank">[GitHub]</a>
-<a href="https://llm-tdrm.github.io/" target="_blank">[Website]</a> <br>
+<a href="" target="_blank">[TDRM]</a> 
+<a href="" target="_blank">[Code]</a>
+<a href="" target="_blank">[Website]</a> <br>
 </p>
 
 This repository contains the code for paper "TDRM: Smooth Reward Models with Temporal Difference for LLM RL and Inference".
@@ -55,31 +55,31 @@ Datasets deployed on Hugging Face:
 
 | Datasets      |
 |---------------|
-| 🤗 [zd21/TDRM-1-step-TD](https://huggingface.co/datasets/zd21/TDRM-1-step-TD)   |
-| 🤗 [zd21/TDRM-2-step-TD](https://huggingface.co/datasets/zd21/TDRM-2-step-TD)   |
-| 🤗 [zd21/TDRM-3-step-TD](https://huggingface.co/datasets/zd21/TDRM-3-step-TD) |
+| 🤗 [TDRM-1-step-TD](https://huggingface.co/datasets/)   |
+| 🤗 [TDRM-2-step-TD](https://huggingface.co/datasets/)   |
+| 🤗 [TDRM-3-step-TD](https://huggingface.co/datasets/) |
 
 Policy Model trained with TDRM:
 
 | Model Series       | Policy Model                      |
 |--------------------|-----------------------------------|
-| DS-R1-Distill-Qwen | 🤗 [zd21/DS-R1-Distill-Qwen-1.5B-TDRM](https://huggingface.co/zd21/DS-R1-Distill-Qwen-1.5B-TDRM) |
-|                    | 🤗 [zd21/DS-R1-Distill-Qwen-7B-TDRM](https://huggingface.co/zd21/DS-R1-Distill-Qwen-7.5B-TDRM)   |
-| Qwen2.5-Math       | 🤗 [zd21/Qwen2.5-Math-1.5B-TDRM](https://huggingface.co/zd21/Qwen2.5-Math-1.5B-TDRM)       |
-|                    | 🤗 [zd21/Qwen2.5-Math-7B-TDRM](https://huggingface.co/zd21/Qwen2.5-Math-7B-TDRM)         |
-| Qwen2.5            | 🤗 [zd21/Qwen2.5-0.5B-TDRM](https://huggingface.co/zd21/Qwen2.5-0.5B-TDRM)            |
-|                    | 🤗 [zd21/Qwen2.5-1.5B-TDRM](https://huggingface.co/zd21/Qwen2.5-1.5B-TDRM)            |
-| GLM4-9B-0414       | 🤗 [zd21/GLM4-9B-0414-TDRM](https://huggingface.co/zd21/GLM4-9B-0414-TDRM)            |
-| GLM-Z1-9B-0414     | 🤗 [zd21/GLM-Z1-9B-0414-TDRM](https://huggingface.co/zd21/GLM-Z1-9B-0414-TDRM)          |
+| DS-R1-Distill-Qwen | 🤗 [DS-R1-Distill-Qwen-1.5B-TDRM](https://huggingface.co/DS-R1-Distill-Qwen-1.5B-TDRM) |
+|                    | 🤗 [DS-R1-Distill-Qwen-7B-TDRM](https://huggingface.co/DS-R1-Distill-Qwen-7.5B-TDRM)   |
+| Qwen2.5-Math       | 🤗 [Qwen2.5-Math-1.5B-TDRM](https://huggingface.co/Qwen2.5-Math-1.5B-TDRM)       |
+|                    | 🤗 [Qwen2.5-Math-7B-TDRM](https://huggingface.co/Qwen2.5-Math-7B-TDRM)         |
+| Qwen2.5            | 🤗 [Qwen2.5-0.5B-TDRM](https://huggingface.co/Qwen2.5-0.5B-TDRM)            |
+|                    | 🤗 [Qwen2.5-1.5B-TDRM](https://huggingface.co/Qwen2.5-1.5B-TDRM)            |
+| GLM4-9B-0414       | 🤗 [GLM4-9B-0414-TDRM](https://huggingface.co/GLM4-9B-0414-TDRM)            |
+| GLM-Z1-9B-0414     | 🤗 [GLM-Z1-9B-0414-TDRM](https://huggingface.co/GLM-Z1-9B-0414-TDRM)          |
 
 Reward Models including baselines:
 
 | Reward Model            |
 |-------------------------|
-| 🤗 [zd21/DeepSeek-TD0-PRM](https://huggingface.co/zd21/DeepSeek-TD0-PRM)   |
-| 🤗 [zd21/DeepSeek-TD2-PRM](https://huggingface.co/zd21/DeepSeek-TD2-PRM)   |
-| 🤗 [zd21/DeepSeek-ScalarPRM](https://huggingface.co/zd21/DeepSeek-ScalarPRM) |
-| 🤗 [zd21/DeepSeek-ScalarORM](https://huggingface.co/zd21/DeepSeek-ScalarORM) |
+| 🤗 [DeepSeek-TD0-PRM](https://huggingface.co/DeepSeek-TD0-PRM)   |
+| 🤗 [DeepSeek-TD2-PRM](https://huggingface.co/DeepSeek-TD2-PRM)   |
+| 🤗 [DeepSeek-ScalarPRM](https://huggingface.co/DeepSeek-ScalarPRM) |
+| 🤗 [DeepSeek-ScalarORM](https://huggingface.co/DeepSeek-ScalarORM) |
 
 ### Launching Experiments
 
@@ -131,13 +131,4 @@ Furthermore, we display TD error across steps and TD error vs. value change magn
 
 ## Citation
 ```
-@misc{zhang2025tdrmsmoothrewardmodels,
-      title={TDRM: Smooth Reward Models with Temporal Difference for LLM RL and Inference}, 
-      author={Dan Zhang and Min Cai and Jonathan Li and Ziniu Hu and Yisong Yue and Yuxiao Dong and Jie Tang},
-      year={2025},
-      eprint={2509.15110},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2509.15110}, 
-}
 ```
