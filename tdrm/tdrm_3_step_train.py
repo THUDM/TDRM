@@ -55,7 +55,7 @@ class ScriptArguments:
         metadata={"help": "The number of training epochs for the reward model."},
     )
     train_set_path: Optional[str] = field(
-        default="zd21/TDRM-3-step-TD",
+        default="TDRM-3-step-TD",
         metadata={"help": "The dir of the subset of the training data to use"},
     )
     output_path: Optional[str] = field(
